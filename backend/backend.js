@@ -6,13 +6,13 @@ const mysql = require('mysql2');
 app.use(cors());
 app.use(express.json());
 
-const db=mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'root',
-    database:'reminderapp'
+const db = mysql.createConnection({
+  host: 'sql.freedb.tech',
+  user: 'freedb_reminderapp_user',
+  password: 'j#??MXeVRNcTf46',
+  database: 'freedb_remindersapp',
+  port: 3306
 });
-
 db.connect((err)=>{
     if(err){
         console.log("Not Connected");
